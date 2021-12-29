@@ -19,7 +19,7 @@ main{
 }
 
 article{
-    background-color: hsl(240, 5%, 91%);
+    background-color: hsl(255, 0%, 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -77,5 +77,13 @@ section p{
 
 section.active p{
     display: inline-block;
-    height: 4em;
+    height: 3.8em;
+    margin-bottom: 0.5em;
+}
+
+hr{
+    width: 100%;
+    padding: 0;
+    margin: 0em;
+    border: solid 1px hsl(240, 5%, 91%);
 }

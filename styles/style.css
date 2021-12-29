@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 main{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,15 +31,18 @@ article{
     position: relative;
 }
 
-article img{
+article img.mobile{
     position: absolute;
     top: -9em;
     width: 20em;
 }
 
 article img.shadow{
-    position: absolute;
     top: 0em;
+}
+
+article img.desktop, img.desktop{
+    display: none;
 }
 
 article h1{
@@ -91,4 +95,38 @@ hr{
     padding: 0;
     margin: 0em;
     border: solid 1px hsl(240, 5%, 91%);
+}
+
+@media (min-width:1024px) {
+    article{
+        width: 62em;
+        padding: 8em 4em;
+        overflow: hidden;
+    }
+
+    article img.mobile{
+        display: none;
+    }
+
+    article img.desktop{
+        display: block;
+        position: absolute;
+        right: 40em;
+    }
+
+    img.box{
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 68em;
+    }
+    
+    section{
+        margin: 1em 0em;
+    }
+
+    .card-content{
+        width: 24em;
+        margin-left: 24em;
+    }
 }

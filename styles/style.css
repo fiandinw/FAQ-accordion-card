@@ -36,6 +36,11 @@ article img{
     width: 20em;
 }
 
+article img.shadow{
+    position: absolute;
+    top: 0em;
+}
+
 article h1{
     font-size: 2.5em;
     margin: 0em 0em 0.8em 0em;
